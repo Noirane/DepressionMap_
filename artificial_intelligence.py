@@ -36,29 +36,7 @@ def graph_models():
 
     st.pyplot(fig)
 
-def plot_shap_summary():
-  
-    with open('grafico_info.json', 'r') as f:
-        grafico_info = json.load(f)
 
-    # gráfico de barras com os dados carregados do JSON
-    fig, ax = plt.subplots(figsize=grafico_info['figsize'])
-    
-   
-    ax.barh(grafico_info['features'], grafico_info['mean_abs_shap_values'], color=grafico_info['color'])
-    
-    
-    ax.set_xlabel(grafico_info['xlabel'], fontsize=16)
-    ax.set_ylabel(grafico_info['ylabel'], fontsize=16)
-    ax.set_title(grafico_info['title'], fontsize=16)
-    plt.gca().invert_yaxis()  # Inverter o eixo y para mostrar as variáveis mais importantes no topo
-    plt.tight_layout()
-
- 
-    ax.set_yticklabels(grafico_info['features'], fontsize=16)  
-   
-    for index, value in enumerate(grafico_info['mean_abs_shap_values']):
-        ax.text(value, index, f'{value:.4f}', va='center', fontsize=10)  
 
 
     st.pyplot(fig)
