@@ -1,7 +1,7 @@
 import streamlit as st
 import menu  
 import country_details
-from artificial_intelligence import graph_models, plot_shap_summary  
+from artificial_intelligence import graph_models
 from tabel import create_table  
 
 
@@ -23,7 +23,7 @@ selected_option = menu.display_menu()
 
 if selected_option == 'Artificial Intelligence':
     graph_models()
-    plot_shap_summary()
+   
 
 elif selected_option == 'Home':  # Verifica se a opção Home foi selecionada
 
