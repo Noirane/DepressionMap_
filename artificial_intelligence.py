@@ -39,5 +39,4 @@ def graph_models():
 
 
 
-    st.pyplot(fig)
-
+ 
