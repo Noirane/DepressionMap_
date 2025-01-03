@@ -1,0 +1,1 @@
+{"Random Forest": 0.9266, "SVM": 0.9904, "Logistic Regression": 0.8213, "K-Nearest Neighbors": 0.8547, "Naive Bayes": 0.877, "Decision Tree": 0.8111, "AdaBoost": 0.4942, "CatBoost": 0.9869, "XGBoost": 0.9466}
